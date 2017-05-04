@@ -15,7 +15,10 @@ Vatican City!
 -- Clue #3: We have new news on the classes Carmen attended – our gumshoes tell us she's moved on
 -- to a different country, a country where people speak only the language she was learning. Find out which
 --  nearby country speaks nothing but that language.
-
+SELECT * from countrylanguage where language LIKE '%Italian%';
+SELECT * from countrylanguage where language LIKE '%Italian%' AND percentage = 100;
+SELECT name from country where code LIKE '%SMR%';
+San Marino!
 
 
 -- Clue #4: We're booking the first flight out – maybe we've actually got a chance to catch her this time.
